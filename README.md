@@ -24,6 +24,7 @@ Makoto Glass is not affiliated with, endorsed by, or sponsored by Google LLC or 
 
 - [Overview](#overview)
 - [Current Beta Features](#current-beta-features)
+- [Interface Preview](#interface-preview)
 - [Makoto Link for iPhone](#makoto-link-for-iphone)
 - [Compatibility](#compatibility)
 - [Requirements](#requirements)
@@ -52,6 +53,8 @@ The current public beta is **developed and tested on Google Glass Enterprise Edi
 
 Compatibility with earlier Google Glass generations has **not yet been validated**. Makoto Glass is not currently presented as EE2-only, but EE2 is the only platform officially tested at this stage.
 
+For the background of the project and why I returned to Google Glass in 2025, see: [**Did Google Glass Fail, or Was It Simply Too Early?**](https://lancer1234.github.io/blog/google-glass-too-early/)
+
 ---
 
 ## Current Beta Features
@@ -71,6 +74,18 @@ Compatibility with earlier Google Glass generations has **not yet been validated
 - Bluetooth reconnect and recovery
 
 Some features depend on the connected iPhone and current iOS Bluetooth state.
+
+---
+
+## Interface Preview
+
+These are actual captures from the current Makoto Glass build running on **Google Glass Enterprise Edition 2**. They show the home screen, AMS Now Playing controls, ANCS notification history, Makoto Link connection status, About screen, and system status panel.
+
+<p align="center">
+  <img src="https://lancer1234.github.io/assets/blog/makoto-glass-ui.svg" alt="Makoto Glass interface screenshots running on Google Glass Enterprise Edition 2" width="900">
+</p>
+
+The screenshots above are captured from Makoto Glass itself and are © MAKOTO LAB.
 
 ---
 
