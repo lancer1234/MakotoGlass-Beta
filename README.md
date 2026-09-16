@@ -51,6 +51,11 @@ It is developed independently by one person under **MAKOTO LAB**, with a broader
 
 The current public beta is **developed and tested on Google Glass Enterprise Edition 2 running Android 8.1**.
 
+<p align="center">
+  <img src="assets/screenshots/home.png" alt="Makoto Glass home screen showing time, greeting, and battery status" width="640">
+</p>
+<p align="center"><sub>Makoto Glass home screen</sub></p>
+
 Compatibility with earlier Google Glass generations has **not yet been validated**. Makoto Glass is not currently presented as EE2-only, but EE2 is the only platform officially tested at this stage.
 
 For the background of the project and why I returned to Google Glass in 2025, see: [**Did Google Glass Fail, or Was It Simply Too Early?**](https://lancer1234.github.io/blog/google-glass-too-early/)
@@ -73,19 +78,25 @@ For the background of the project and why I returned to Google Glass in 2025, se
 - Accessibility-based system control foundation
 - Bluetooth reconnect and recovery
 
+<p align="center">
+  <img src="assets/screenshots/media-controls.png" alt="Makoto Glass Now Playing screen with iPhone media controls" width="640">
+</p>
+<p align="center"><sub>AMS Now Playing and media controls</sub></p>
+
 Some features depend on the connected iPhone and current iOS Bluetooth state.
 
 ---
 
 ## Interface Preview
 
-These are actual captures from the current Makoto Glass build running on **Google Glass Enterprise Edition 2**. They show the home screen, AMS Now Playing controls, ANCS notification history, Makoto Link connection status, About screen, and system status panel.
+These are actual captures from the current Makoto Glass build running on **Google Glass Enterprise Edition 2**. Additional views are placed throughout this README beside the features they illustrate.
 
 <p align="center">
-  <img src="https://lancer1234.github.io/assets/blog/makoto-glass-ui.svg" alt="Makoto Glass interface screenshots running on Google Glass Enterprise Edition 2" width="900">
+  <img src="assets/screenshots/notification-history.png" alt="Makoto Glass ANCS notification history showing a Pinterest notification" width="640">
 </p>
+<p align="center"><sub>ANCS notification history</sub></p>
 
-The screenshots above are captured from Makoto Glass itself and are © MAKOTO LAB.
+The screenshots in this README are captured from Makoto Glass itself and are © MAKOTO LAB.
 
 ---
 
@@ -105,6 +116,11 @@ The following features require Makoto Link and are not yet available in the stan
 - Advanced Makoto Link pairing
 
 This README will be updated when the TestFlight beta becomes available.
+
+<p align="center">
+  <img src="assets/screenshots/makoto-link.png" alt="Makoto Link screen showing a connected iPhone" width="640">
+</p>
+<p align="center"><sub>Makoto Link connection status</sub></p>
 
 ---
 
@@ -137,6 +153,11 @@ For the currently tested configuration:
 - ADB access for installation
 
 **Root access is not required.**
+
+<p align="center">
+  <img src="assets/screenshots/system-status.png" alt="Makoto Glass system status showing battery, iPhone, Wi-Fi, and storage" width="640">
+</p>
+<p align="center"><sub>System status at a glance</sub></p>
 
 ### iPhone
 
@@ -343,6 +364,11 @@ Please remove personal information, account data, Bluetooth identifiers, and oth
 **MAKOTO LAB** is an independent experimental software and hardware studio focused on extending unusual, discontinued, and emerging computing platforms.
 
 Makoto Glass explores how Google Glass hardware can continue to function as a modern wearable platform through custom software, Bluetooth integration, and companion-device services.
+
+<p align="center">
+  <img src="assets/screenshots/about.png" alt="Makoto Glass About screen for Google Glass Enterprise Edition 2" width="640">
+</p>
+<p align="center"><sub>Makoto Glass About screen</sub></p>
 
 **Project:** Makoto Glass  
 **Core integration:** iPhone notifications via ANCS + media controls via AMS  
