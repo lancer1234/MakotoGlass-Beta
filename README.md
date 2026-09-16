@@ -1,6 +1,8 @@
 # Makoto Glass — Public Beta
 
-> A lightweight system shell and iPhone companion project for **Google Glass Enterprise Edition 2**.
+> A lightweight system shell and iPhone companion project for **Google Glass**.
+>
+> Currently developed and tested on **Google Glass Enterprise Edition 2**.
 >
 > Developed independently by **MAKOTO LAB**.
 
@@ -21,6 +23,7 @@ Makoto Glass is not affiliated with, endorsed by, or sponsored by Google LLC or 
 - [Overview](#overview)
 - [Current Beta Features](#current-beta-features)
 - [Makoto Link for iPhone](#makoto-link-for-iphone)
+- [Compatibility](#compatibility)
 - [Requirements](#requirements)
 - [Installation](#installation)
 - [Connect an iPhone](#connect-an-iphone)
@@ -36,11 +39,13 @@ Makoto Glass is not affiliated with, endorsed by, or sponsored by Google LLC or 
 
 ## Overview
 
-Makoto Glass started as a personal hobby project exploring how far Google Glass Enterprise Edition 2 can still be pushed as a modern wearable computer.
+Makoto Glass started as a personal hobby project exploring how far Google Glass hardware can still be pushed as a modern wearable computer.
 
 It is developed independently by one person under **MAKOTO LAB**, with a focus on extending unusual and discontinued computing platforms through custom software, Bluetooth integration, companion-device services, and new interaction ideas.
 
-The current public beta targets **Google Glass Enterprise Edition 2 running Android 8.1**.
+The current public beta is **developed and tested on Google Glass Enterprise Edition 2 running Android 8.1**.
+
+Compatibility with earlier Google Glass generations has **not yet been validated**. Makoto Glass is not currently presented as EE2-only, but EE2 is the only platform officially tested at this stage.
 
 ---
 
@@ -83,9 +88,28 @@ This README will be updated when the TestFlight beta becomes available.
 
 ---
 
+## Compatibility
+
+### Tested
+
+- **Google Glass Enterprise Edition 2**
+- **Android 8.1**
+
+### Not yet validated
+
+Earlier Google Glass generations, including **Enterprise Edition 1** and **Explorer Edition**, have not yet been tested with this public beta.
+
+Some parts of Makoto Glass may be portable to earlier Glass hardware, but installation, Bluetooth behavior, touchpad input, camera support, and system-level features may differ across generations.
+
+If you have an earlier Glass model and are interested in testing compatibility, feedback is welcome through GitHub Issues.
+
+---
+
 ## Requirements
 
 ### Google Glass
+
+For the currently tested configuration:
 
 - Google Glass Enterprise Edition 2
 - Android 8.1
@@ -228,6 +252,8 @@ Accessibility control is optional and does not affect basic ANCS notification fu
 
 ## Known Limitations
 
+- Google Glass Enterprise Edition 2 is currently the only validated Glass generation.
+- Earlier Glass generations have not yet been tested and may require compatibility changes.
 - Bluetooth reconnection may occasionally require restarting Bluetooth or Glass.
 - ANCS availability is controlled by iOS.
 - Accessibility support varies between Android applications.
@@ -236,7 +262,7 @@ Accessibility control is optional and does not affect basic ANCS notification fu
 - Navigation is not yet included.
 - Features and protocols may change between beta releases.
 
-Google Glass Enterprise Edition 2 is an older Android 8.1 platform, and behavior may vary between firmware versions.
+Behavior may vary between Glass generations, firmware versions, and iOS versions.
 
 ---
 
@@ -258,7 +284,7 @@ Support is completely optional and does not purchase features, support priority,
 
 <a href="https://github.com/lancer1234/MakotoGlass-Beta/issues"><img alt="Report a Bug" src="https://img.shields.io/badge/GitHub-Report%20a%20Bug-d73a49?style=for-the-badge&logo=github&logoColor=white"></a>
 
-Useful information includes the Makoto Glass version, Glass firmware / Android version, iPhone model and iOS version when relevant, steps to reproduce the problem, and relevant ADB / Logcat output.
+Useful information includes the Makoto Glass version, Glass model and firmware / Android version, iPhone model and iOS version when relevant, steps to reproduce the problem, and relevant ADB / Logcat output.
 
 Please remove personal information, account data, Bluetooth identifiers, and other sensitive information before posting logs publicly.
 
@@ -268,11 +294,12 @@ Please remove personal information, account data, Bluetooth identifiers, and oth
 
 **MAKOTO LAB** is an independent experimental software and hardware studio focused on extending unusual, discontinued, and emerging computing platforms.
 
-Makoto Glass explores how Google Glass Enterprise Edition 2 can continue to function as a modern wearable platform through custom software, Bluetooth integration, and companion-device services.
+Makoto Glass explores how Google Glass hardware can continue to function as a modern wearable platform through custom software, Bluetooth integration, and companion-device services.
 
 **Project:** Makoto Glass  
 **Companion:** Makoto Link  
 **Developer:** MAKOTO LAB  
+**Currently tested on:** Google Glass Enterprise Edition 2  
 **Copyright:** © 2026 MAKOTO LAB. All rights reserved.
 
 <p>
