@@ -1,6 +1,6 @@
 # Makoto Glass — Public Beta
 
-> A lightweight system shell and iPhone companion project for **Google Glass**.
+> **iPhone notifications and media controls for Google Glass using Apple ANCS and AMS.**
 >
 > Currently developed and tested on **Google Glass Enterprise Edition 2**.
 >
@@ -11,6 +11,8 @@
   <a href="https://github.com/lancer1234/MakotoGlass-Beta/releases/tag/v0.1.0-beta"><img alt="Release Notes" src="https://img.shields.io/badge/Release-Notes-555?style=for-the-badge&logo=github&logoColor=white"></a>
   <a href="https://buymeacoffee.com/makotolab"><img alt="Support MAKOTO LAB" src="https://img.shields.io/badge/Support-MAKOTO%20LAB-FFDD00?style=for-the-badge&logo=buymeacoffee&logoColor=000000"></a>
 </p>
+
+**Makoto Glass** is an experimental Google Glass system shell that adds direct iPhone integration through **Apple Notification Center Service (ANCS)** and **Apple Media Service (AMS)**. On the currently tested EE2 configuration, it can display supported iPhone notifications, expose notification history and actions, show Now Playing metadata, and provide media controls without requiring root access.
 
 **Public Beta** — expect bugs, incomplete features, and changes between releases.
 
@@ -27,6 +29,7 @@ Makoto Glass is not affiliated with, endorsed by, or sponsored by Google LLC or 
 - [Requirements](#requirements)
 - [Installation](#installation)
 - [Connect an iPhone](#connect-an-iphone)
+- [FAQ](#faq)
 - [Updating](#updating)
 - [Accessibility Control](#accessibility-control)
 - [Known Limitations](#known-limitations)
@@ -41,7 +44,9 @@ Makoto Glass is not affiliated with, endorsed by, or sponsored by Google LLC or 
 
 Makoto Glass started as a personal hobby project exploring how far Google Glass hardware can still be pushed as a modern wearable computer.
 
-It is developed independently by one person under **MAKOTO LAB**, with a focus on extending unusual and discontinued computing platforms through custom software, Bluetooth integration, companion-device services, and new interaction ideas.
+Its main focus is **Google Glass + iPhone integration**, especially bringing iPhone notifications and media controls to Glass through Apple Bluetooth services rather than requiring a custom phone-side app for those core features.
+
+It is developed independently by one person under **MAKOTO LAB**, with a broader focus on extending unusual and discontinued computing platforms through custom software, Bluetooth integration, companion-device services, and new interaction ideas.
 
 The current public beta is **developed and tested on Google Glass Enterprise Edition 2 running Android 8.1**.
 
@@ -56,7 +61,7 @@ Compatibility with earlier Google Glass generations has **not yet been validated
 - iPhone notification display and history
 - Supported notification actions and incoming-call handling
 - Apple Media Service (**AMS**)
-- Now Playing and media controls
+- Now Playing metadata and media controls
 - Camera and photo viewer
 - Application launcher
 - Tilt Wake
@@ -73,7 +78,7 @@ Some features depend on the connected iPhone and current iOS Bluetooth state.
 
 **Makoto Link** is the companion iPhone application for Makoto Glass and is currently being prepared for TestFlight distribution.
 
-Until it becomes publicly available, Makoto Glass can still use supported native Apple Bluetooth services such as **ANCS** and **AMS** directly with an iPhone.
+Makoto Link is **not required for the core ANCS and AMS features**. Makoto Glass can use supported native Apple Bluetooth services directly with an iPhone for notifications and media integration.
 
 The following features require Makoto Link and are not yet available in the standalone Glass beta:
 
@@ -224,6 +229,34 @@ If notifications do not appear, confirm Bluetooth is connected and notification 
 
 ---
 
+## FAQ
+
+### Can Google Glass receive iPhone notifications?
+
+On the currently tested **Google Glass Enterprise Edition 2** configuration, yes. Makoto Glass uses **Apple Notification Center Service (ANCS)** to receive supported iPhone notification information over Bluetooth.
+
+### Can Google Glass control iPhone media playback?
+
+On the currently tested EE2 configuration, yes. Makoto Glass uses **Apple Media Service (AMS)** to show Now Playing metadata and provide supported media controls.
+
+### Does Makoto Glass require root?
+
+No. The standard Makoto Glass experience does **not** require root access.
+
+### Do I need Makoto Link for iPhone notifications or media controls?
+
+No. **ANCS and AMS do not require Makoto Link.** Makoto Link is intended for additional features such as GPS / Location Bridge, remote control, Find Glass, and companion-device management.
+
+### Which Google Glass models are supported?
+
+**Enterprise Edition 2 is the only model officially tested so far.** Enterprise Edition 1 and Explorer Edition compatibility has not yet been validated.
+
+### Is Makoto Glass open source?
+
+No. The public repository is used for binary releases, documentation, feedback, and issue tracking. The application source code is not publicly distributed at this time.
+
+---
+
 ## Updating
 
 <a href="https://github.com/lancer1234/MakotoGlass-Beta/releases"><img alt="All Releases" src="https://img.shields.io/badge/Download-Latest%20Release-2ea44f?style=for-the-badge&logo=github&logoColor=white"></a>
@@ -297,6 +330,7 @@ Please remove personal information, account data, Bluetooth identifiers, and oth
 Makoto Glass explores how Google Glass hardware can continue to function as a modern wearable platform through custom software, Bluetooth integration, and companion-device services.
 
 **Project:** Makoto Glass  
+**Core integration:** iPhone notifications via ANCS + media controls via AMS  
 **Companion:** Makoto Link  
 **Developer:** MAKOTO LAB  
 **Currently tested on:** Google Glass Enterprise Edition 2  
