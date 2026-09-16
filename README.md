@@ -100,15 +100,25 @@ For standalone ANCS / AMS functionality:
 
 ## Installation
 
-### 1. Download the APK
+### 1. Download Makoto Glass
 
-Open the **Releases** section of this repository and download the latest:
+Download the current public beta from the GitHub Release:
+
+### **[Download Makoto Glass v0.1.0 Beta APK](https://github.com/lancer1234/MakotoGlass-Beta/releases/download/v0.1.0-beta/MakotoGlass-0.1.0-beta.apk)**
+
+You can also view the full release notes here:
+
+**[Makoto Glass v0.1.0 Beta — Release Page](https://github.com/lancer1234/MakotoGlass-Beta/releases/tag/v0.1.0-beta)**
+
+The file you need is:
 
 ```text
-MakotoGlass-<version>.apk
+MakotoGlass-0.1.0-beta.apk
 ```
 
-The automatically generated GitHub source archives are not application packages. Makoto Glass source code is not distributed through this public repository.
+Do **not** download GitHub's automatically generated `Source code (zip)` or `Source code (tar.gz)` files. Those are repository archives, not the Makoto Glass application.
+
+The Makoto Glass source code is not distributed through this public repository.
 
 ### 2. Enable ADB on Glass
 
@@ -130,13 +140,7 @@ Approve the ADB authorization prompt on Glass if one appears.
 
 ### 3. Install Makoto Glass
 
-From the directory containing the APK:
-
-```bash
-adb install -r MakotoGlass-<version>.apk
-```
-
-Example:
+Open Terminal / Command Prompt in the folder containing the downloaded APK and run:
 
 ```bash
 adb install -r MakotoGlass-0.1.0-beta.apk
@@ -196,7 +200,7 @@ If notifications do not appear, confirm Bluetooth is connected and notification 
 
 ## Updating
 
-Install a newer APK over the existing version:
+Download the newest APK from the repository's **Releases** page, then install it over the existing version:
 
 ```bash
 adb install -r MakotoGlass-<new-version>.apk
