@@ -1,77 +1,70 @@
 # Makoto Glass — Public Beta
 
-**Makoto Glass** is an experimental system shell and companion software project for **Google Glass Enterprise Edition 2**.
+> A lightweight system shell and iPhone companion project for **Google Glass Enterprise Edition 2**.
+>
+> Developed independently by **MAKOTO LAB**.
 
-Developed by **MAKOTO LAB**.
+**Public Beta** — expect bugs, incomplete features, and changes between releases.
 
-> **Public Beta** — expect bugs, incomplete features, and changes between releases.
-
-Makoto Glass is an independent project and is **not affiliated with, endorsed by, or sponsored by Google LLC or Apple Inc.** Google Glass, Android, iPhone, iOS, and related names are trademarks of their respective owners.
-
----
-
-## About the project
-
-Makoto Glass started as a personal hobby project to see how far Google Glass Enterprise Edition 2 could still be pushed as a modern wearable computer.
-
-It is currently developed independently by one person under **MAKOTO LAB**. The project is not backed by a company, manufacturer, or hardware vendor.
-
-Development is focused on extending the useful life of discontinued and unusual computing platforms through custom software, Bluetooth integration, companion-device services, and new interaction ideas.
-
-### Support the project
-
-Makoto Glass is currently developed in my personal time. I am also currently between jobs, so development hardware, test devices, accessories, and platform fees are paid out of pocket.
-
-If this project is useful or interesting to you, voluntary donations help me:
-
-- purchase additional Glass and wearable devices for testing;
-- test more firmware and hardware configurations;
-- expand Makoto Link compatibility to additional devices;
-- maintain development tools, signing, and distribution costs;
-- keep public beta builds available while continuing independent development.
-
-**PayPal donation link: coming soon.**
-
-Donations are completely optional and do not purchase support, features, licenses, ownership, or development priority. The project will remain driven by technical feasibility, testing, and available development time.
+Makoto Glass is not affiliated with, endorsed by, or sponsored by Google LLC or Apple Inc. Google Glass, Android, iPhone, iOS, and related names are trademarks of their respective owners.
 
 ---
 
-## Current beta features
+## Index
 
-Current Glass functionality includes:
+- [Overview](#overview)
+- [Current Beta Features](#current-beta-features)
+- [Makoto Link for iPhone](#makoto-link-for-iphone)
+- [Requirements](#requirements)
+- [Installation](#installation)
+- [Connect an iPhone](#connect-an-iphone)
+- [Updating](#updating)
+- [Accessibility Control](#accessibility-control)
+- [Known Limitations](#known-limitations)
+- [Support MAKOTO LAB](#support-makoto-lab)
+- [Reporting Bugs](#reporting-bugs)
+- [About MAKOTO LAB](#about-makoto-lab)
+- [License](#license)
+
+---
+
+## Overview
+
+Makoto Glass started as a personal hobby project exploring how far Google Glass Enterprise Edition 2 can still be pushed as a modern wearable computer.
+
+It is developed independently by one person under **MAKOTO LAB**, with a focus on extending unusual and discontinued computing platforms through custom software, Bluetooth integration, companion-device services, and new interaction ideas.
+
+The current public beta targets **Google Glass Enterprise Edition 2 running Android 8.1**.
+
+---
+
+## Current Beta Features
 
 - Custom Glass launcher
 - Apple Notification Center Service (ANCS)
-- iPhone notification display
-- Notification history
-- Supported notification actions
-- Incoming call notification handling
+- iPhone notification display and history
+- Supported notification actions and incoming-call handling
 - Apple Media Service (AMS)
-- Now Playing information
-- Media controls
-- Camera
-- Photo viewer
+- Now Playing and media controls
+- Camera and photo viewer
 - Application launcher
 - Tilt Wake
 - Automatic brightness
 - System status
-- Accessibility-based system-control foundation
+- Accessibility-based system control foundation
 - Bluetooth reconnect and recovery
 
-Some functionality depends on the connected iPhone and current iOS Bluetooth state.
+Some features depend on the connected iPhone and current iOS Bluetooth state.
 
 ---
 
 ## Makoto Link for iPhone
 
-The **Makoto Link** iPhone companion application is currently being prepared for TestFlight distribution.
+**Makoto Link** is the companion iPhone application for Makoto Glass and is currently being prepared for TestFlight distribution.
 
-Until Makoto Link is available, Makoto Glass can still use supported native Apple Bluetooth services such as:
+Until it becomes publicly available, Makoto Glass can still use supported native Apple Bluetooth services such as **ANCS** and **AMS** directly with an iPhone.
 
-- Apple Notification Center Service (ANCS)
-- Apple Media Service (AMS)
-
-Features that require Makoto Link are not yet available in the standalone Glass beta, including:
+The following features require Makoto Link and are not yet available in the standalone Glass beta:
 
 - iPhone Remote
 - iPhone GPS / Location Bridge
@@ -80,7 +73,7 @@ Features that require Makoto Link are not yet available in the standalone Glass 
 - Companion-app configuration
 - Advanced Makoto Link pairing
 
-This README will be updated when the Makoto Link TestFlight beta becomes available.
+This README will be updated when the TestFlight beta becomes available.
 
 ---
 
@@ -93,9 +86,7 @@ This README will be updated when the Makoto Link TestFlight beta becomes availab
 - Bluetooth Low Energy
 - ADB access for installation
 
-**Root access is not required** for the standard Makoto Glass experience.
-
-Optional experimental functionality may support enhanced capabilities on modified devices in future releases, but root is not a requirement for Makoto Glass.
+**Root access is not required.**
 
 ### iPhone
 
@@ -105,43 +96,41 @@ For standalone ANCS / AMS functionality:
 - Bluetooth enabled
 - Notification access allowed for the paired Glass accessory
 
-Makoto Link will provide additional features when the iPhone beta becomes available.
-
 ---
 
-# Installation
+## Installation
 
-## 1. Download Makoto Glass
+### 1. Download the APK
 
-Open the **Releases** section of this repository and download the latest APK:
+Open the **Releases** section of this repository and download the latest:
 
 ```text
 MakotoGlass-<version>.apk
 ```
 
-Do not use GitHub's automatically generated source archives as application packages. The Makoto Glass application source code is not distributed through this public repository.
+The automatically generated GitHub source archives are not application packages. Makoto Glass source code is not distributed through this public repository.
 
-## 2. Enable ADB on Google Glass
+### 2. Enable ADB on Glass
 
-Developer options and USB debugging must be enabled on the Glass.
+Enable **Developer options** and **USB debugging** on Google Glass, then connect it to your computer over USB.
 
-Connect the Glass to your computer by USB and verify that ADB can see the device:
+Verify the device:
 
 ```bash
 adb devices
 ```
 
-The Glass should appear similar to:
+You should see a device entry similar to:
 
 ```text
 XXXXXXXXXXXX    device
 ```
 
-If an authorization prompt appears on Glass, approve the computer's ADB key.
+Approve the ADB authorization prompt on Glass if one appears.
 
-## 3. Install the APK
+### 3. Install Makoto Glass
 
-From the directory containing the downloaded APK:
+From the directory containing the APK:
 
 ```bash
 adb install -r MakotoGlass-<version>.apk
@@ -153,187 +142,139 @@ Example:
 adb install -r MakotoGlass-0.1.0-beta.apk
 ```
 
-A successful installation should return:
+A successful installation returns:
 
 ```text
 Success
 ```
 
-## 4. Select Makoto Glass as Home
+### 4. Set Makoto Glass as Home
 
-After installation, Android may ask which application should be used as the Home application.
+If Android asks which application should be used as Home, select **Makoto Glass** and choose **Always** if available.
 
-Select **Makoto Glass** and, if available, choose **Always**.
-
-Makoto Glass will then act as the primary launcher for the device.
+Makoto Glass will then act as the primary launcher.
 
 ---
 
-# Connecting an iPhone — standalone beta
+## Connect an iPhone
 
-Makoto Link is not required for basic ANCS / AMS operation.
+Makoto Link is **not required** for basic ANCS / AMS operation.
 
-## 1. Enable Bluetooth on iPhone
+### 1. Enable Bluetooth
 
-On the iPhone:
+On iPhone:
 
 ```text
 Settings → Bluetooth → On
 ```
 
-Keep the Bluetooth settings page open during initial pairing.
+Keep this page open during the first pairing attempt.
 
-## 2. Open the Glass Bluetooth / Link screen
+### 2. Put Glass into pairing mode
 
-On Makoto Glass, navigate to the Bluetooth / Link pairing interface and place the Glass into pairing mode.
+Open the Bluetooth / Link screen in Makoto Glass and start pairing.
 
-The Glass may advertise itself as:
+The device may advertise as:
 
 ```text
 Makoto Glass
 ```
 
-## 3. Pair the devices
+### 3. Pair and authorize
 
-If Makoto Glass appears in the iPhone Bluetooth interface, select it and complete any Bluetooth pairing or authorization prompts shown by iOS or Glass.
+Select Makoto Glass from the iPhone Bluetooth interface if it appears, then complete any pairing or authorization prompts shown by iOS or Glass.
 
-Pairing behavior can vary between iOS versions.
+A Bluetooth connection alone does not always mean ANCS access has been authorized. Complete any notification-access or Bluetooth authorization prompts presented by iOS.
 
-A Bluetooth connection alone does not necessarily mean ANCS has already been authorized. Complete any notification-access or Bluetooth authorization dialogs presented by iOS.
+### 4. Wait for ANCS / AMS
 
-## 4. Wait for ANCS connection
+After pairing, Makoto Glass will attempt to discover Apple's notification and media services automatically.
 
-After pairing, Makoto Glass will attempt to discover Apple Notification Center Service from the iPhone.
-
-When ANCS is available, supported iPhone notifications can be displayed on Glass.
-
-If notifications do not appear:
-
-1. Confirm Bluetooth is connected.
-2. Confirm notification access has been allowed.
-3. Restart Bluetooth on the iPhone if necessary.
-4. Restart Makoto Glass.
-5. If necessary, reboot the Glass and reconnect the devices.
+If notifications do not appear, confirm Bluetooth is connected and notification access is allowed. Restart Bluetooth, Makoto Glass, or the Glass device if necessary.
 
 ---
 
-# Optional wireless ADB
+## Updating
 
-After initially connecting Glass by USB:
-
-```bash
-adb tcpip 5555
-```
-
-Find the Glass Wi-Fi address:
-
-```bash
-adb shell ip addr show wlan0
-```
-
-Then connect wirelessly:
-
-```bash
-adb connect GLASS_IP:5555
-```
-
-Example:
-
-```bash
-adb connect 192.168.50.11:5555
-```
-
-Verify:
-
-```bash
-adb devices
-```
-
-Android 8.1 may disable TCP ADB after a reboot. If that happens, reconnect by USB and run `adb tcpip 5555` again.
-
----
-
-# Updating Makoto Glass
-
-Download the newer APK and install it using:
+Install a newer APK over the existing version:
 
 ```bash
 adb install -r MakotoGlass-<new-version>.apk
 ```
 
-Using `-r` preserves existing application data when Android accepts the application signature.
+Using `-r` preserves existing application data when the APK uses a compatible signing key.
 
-Do not uninstall the existing application unless necessary, because uninstalling may erase Makoto Glass settings and stored application data.
+Avoid uninstalling unless necessary, because uninstalling may remove local settings and stored app data.
 
 ---
 
-# Accessibility control
+## Accessibility Control
 
-Some system-wide Remote functionality uses Android Accessibility Services.
+Some system-wide Remote functionality uses Android Accessibility Services so supported Android interfaces can be controlled without root access.
 
-This allows Makoto Glass to interact with supported Android user interfaces without requiring root access.
-
-Accessibility behavior depends on the application being controlled. Applications using custom rendering, OpenGL, Canvas-based interfaces, or incomplete accessibility metadata may not support every Remote action.
+Compatibility depends on how each application exposes its interface. Apps using custom rendering, OpenGL, Canvas-based interfaces, or incomplete accessibility metadata may not support every Remote action.
 
 Accessibility control is optional and does not affect basic ANCS notification functionality.
 
 ---
 
-# Known limitations
-
-Makoto Glass is currently beta software.
-
-Known limitations may include:
+## Known Limitations
 
 - Bluetooth reconnection may occasionally require restarting Bluetooth or Glass.
 - ANCS availability is controlled by iOS.
-- Some applications expose incomplete Accessibility information.
-- System-wide Remote compatibility varies between Android applications.
+- Accessibility support varies between Android applications.
 - Makoto Link companion features are unavailable until the iPhone beta is released.
-- GPS functionality requires Makoto Link for iPhone.
-- Navigation functionality is not yet included.
+- GPS and Location Bridge require Makoto Link for iPhone.
+- Navigation is not yet included.
 - Features and protocols may change between beta releases.
 
-Google Glass Enterprise Edition 2 is an older Android 8.1 platform, and behavior may differ between firmware versions.
+Google Glass Enterprise Edition 2 is an older Android 8.1 platform, and behavior may vary between firmware versions.
 
 ---
 
-# Reporting bugs
+## Support MAKOTO LAB
 
-Please use the **Issues** section of this repository.
+Makoto Glass is an independent project I build in my own time because I enjoy experimenting with unusual and discontinued computing platforms.
 
-When reporting a problem, include when possible:
+I am currently between jobs, and development hardware, test devices, accessories, signing, and distribution costs are funded personally.
 
-- Makoto Glass version
-- Glass firmware / Android version
-- iPhone model
-- iOS version
-- Description of the problem
-- Steps to reproduce it
-- Relevant ADB / Logcat output
+If you enjoy the project and would like to help it continue, support makes it possible for me to purchase additional test devices, explore more firmware and hardware combinations, and expand Makoto Link support to more wearable platforms in the future.
 
-Please remove personal information, Bluetooth identifiers, account information, and other sensitive data from logs before posting them publicly.
+### ☕ [Support MAKOTO LAB on Buy Me a Coffee](https://buymeacoffee.com/makotolab)
+
+Support is completely optional and does not purchase features, support priority, licenses, ownership, or development priority.
 
 ---
 
-# About MAKOTO LAB
+## Reporting Bugs
+
+Please use the repository's **Issues** section.
+
+Useful information includes the Makoto Glass version, Glass firmware / Android version, iPhone model and iOS version when relevant, steps to reproduce the problem, and relevant ADB / Logcat output.
+
+Please remove personal information, account data, Bluetooth identifiers, and other sensitive information before posting logs publicly.
+
+---
+
+## About MAKOTO LAB
 
 **MAKOTO LAB** is an independent experimental software and hardware studio focused on extending unusual, discontinued, and emerging computing platforms.
 
-Makoto Glass explores how Google Glass Enterprise Edition 2 can continue to function as a modern wearable computing platform through custom software, Bluetooth integration, and companion-device services.
+Makoto Glass explores how Google Glass Enterprise Edition 2 can continue to function as a modern wearable platform through custom software, Bluetooth integration, and companion-device services.
 
 **Project:** Makoto Glass  
-**Companion platform:** Makoto Link  
+**Companion:** Makoto Link  
 **Developer:** MAKOTO LAB  
 **Instagram:** @d.wang___  
+**Support:** https://buymeacoffee.com/makotolab  
 **Copyright:** © 2026 MAKOTO LAB. All rights reserved.
 
 ---
 
-# License
+## License
 
 Makoto Glass is proprietary software distributed under the **MAKOTO LAB Limited Beta License**.
 
-The public repository is provided for release distribution, documentation, and issue tracking. It is **not an open-source repository**.
+This public repository exists for binary releases, documentation, feedback, and issue tracking. It is **not an open-source repository**.
 
 See [LICENSE](LICENSE) for the full terms.
