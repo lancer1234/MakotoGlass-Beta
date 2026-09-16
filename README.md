@@ -4,6 +4,12 @@
 >
 > Developed independently by **MAKOTO LAB**.
 
+<p>
+  <a href="https://github.com/lancer1234/MakotoGlass-Beta/releases/download/v0.1.0-beta/MakotoGlass-0.1.0-beta.apk"><img alt="Download Makoto Glass" src="https://img.shields.io/badge/Download-v0.1.0%20Beta-2ea44f?style=for-the-badge&logo=android&logoColor=white"></a>
+  <a href="https://github.com/lancer1234/MakotoGlass-Beta/releases/tag/v0.1.0-beta"><img alt="Release Notes" src="https://img.shields.io/badge/Release-Notes-555?style=for-the-badge&logo=github&logoColor=white"></a>
+  <a href="https://buymeacoffee.com/makotolab"><img alt="Support MAKOTO LAB" src="https://img.shields.io/badge/Support-MAKOTO%20LAB-FFDD00?style=for-the-badge&logo=buymeacoffee&logoColor=000000"></a>
+</p>
+
 **Public Beta** — expect bugs, incomplete features, and changes between releases.
 
 Makoto Glass is not affiliated with, endorsed by, or sponsored by Google LLC or Apple Inc. Google Glass, Android, iPhone, iOS, and related names are trademarks of their respective owners.
@@ -41,10 +47,10 @@ The current public beta targets **Google Glass Enterprise Edition 2 running Andr
 ## Current Beta Features
 
 - Custom Glass launcher
-- Apple Notification Center Service (ANCS)
+- Apple Notification Center Service (**ANCS**)
 - iPhone notification display and history
 - Supported notification actions and incoming-call handling
-- Apple Media Service (AMS)
+- Apple Media Service (**AMS**)
 - Now Playing and media controls
 - Camera and photo viewer
 - Application launcher
@@ -102,13 +108,9 @@ For standalone ANCS / AMS functionality:
 
 ### 1. Download Makoto Glass
 
-Download the current public beta from the GitHub Release:
+<a href="https://github.com/lancer1234/MakotoGlass-Beta/releases/download/v0.1.0-beta/MakotoGlass-0.1.0-beta.apk"><img alt="Download Makoto Glass v0.1.0 Beta APK" src="https://img.shields.io/badge/Download-MakotoGlass--0.1.0--beta.apk-2ea44f?style=for-the-badge&logo=android&logoColor=white"></a>
 
-### **[Download Makoto Glass v0.1.0 Beta APK](https://github.com/lancer1234/MakotoGlass-Beta/releases/download/v0.1.0-beta/MakotoGlass-0.1.0-beta.apk)**
-
-You can also view the full release notes here:
-
-**[Makoto Glass v0.1.0 Beta — Release Page](https://github.com/lancer1234/MakotoGlass-Beta/releases/tag/v0.1.0-beta)**
+<a href="https://github.com/lancer1234/MakotoGlass-Beta/releases/tag/v0.1.0-beta"><img alt="View v0.1.0 Beta Release" src="https://img.shields.io/badge/View-v0.1.0%20Beta%20Release-555?style=for-the-badge&logo=github&logoColor=white"></a>
 
 The file you need is:
 
@@ -200,7 +202,9 @@ If notifications do not appear, confirm Bluetooth is connected and notification 
 
 ## Updating
 
-Download the newest APK from the repository's **Releases** page, then install it over the existing version:
+<a href="https://github.com/lancer1234/MakotoGlass-Beta/releases"><img alt="All Releases" src="https://img.shields.io/badge/Download-Latest%20Release-2ea44f?style=for-the-badge&logo=github&logoColor=white"></a>
+
+Download the newest APK and install it over the existing version:
 
 ```bash
 adb install -r MakotoGlass-<new-version>.apk
@@ -244,7 +248,7 @@ I am currently between jobs, and development hardware, test devices, accessories
 
 If you enjoy the project and would like to help it continue, support makes it possible for me to purchase additional test devices, explore more firmware and hardware combinations, and expand Makoto Link support to more wearable platforms in the future.
 
-### ☕ [Support MAKOTO LAB on Buy Me a Coffee](https://buymeacoffee.com/makotolab)
+<a href="https://buymeacoffee.com/makotolab"><img alt="Support MAKOTO LAB on Buy Me a Coffee" src="https://img.shields.io/badge/Support-MAKOTO%20LAB-FFDD00?style=for-the-badge&logo=buymeacoffee&logoColor=000000"></a>
 
 Support is completely optional and does not purchase features, support priority, licenses, ownership, or development priority.
 
@@ -252,7 +256,7 @@ Support is completely optional and does not purchase features, support priority,
 
 ## Reporting Bugs
 
-Please use the repository's **Issues** section.
+<a href="https://github.com/lancer1234/MakotoGlass-Beta/issues"><img alt="Report a Bug" src="https://img.shields.io/badge/GitHub-Report%20a%20Bug-d73a49?style=for-the-badge&logo=github&logoColor=white"></a>
 
 Useful information includes the Makoto Glass version, Glass firmware / Android version, iPhone model and iOS version when relevant, steps to reproduce the problem, and relevant ADB / Logcat output.
 
@@ -269,9 +273,12 @@ Makoto Glass explores how Google Glass Enterprise Edition 2 can continue to func
 **Project:** Makoto Glass  
 **Companion:** Makoto Link  
 **Developer:** MAKOTO LAB  
-**Instagram:** @d.wang___  
-**Support:** https://buymeacoffee.com/makotolab  
 **Copyright:** © 2026 MAKOTO LAB. All rights reserved.
+
+<p>
+  <a href="https://www.instagram.com/d.wang___/"><img alt="Instagram" src="https://img.shields.io/badge/Instagram-@d.wang___-E4405F?style=for-the-badge&logo=instagram&logoColor=white"></a>
+  <a href="https://buymeacoffee.com/makotolab"><img alt="Support MAKOTO LAB" src="https://img.shields.io/badge/Support-Buy%20Me%20a%20Coffee-FFDD00?style=for-the-badge&logo=buymeacoffee&logoColor=000000"></a>
+</p>
 
 ---
 
@@ -281,4 +288,4 @@ Makoto Glass is proprietary software distributed under the **MAKOTO LAB Limited 
 
 This public repository exists for binary releases, documentation, feedback, and issue tracking. It is **not an open-source repository**.
 
-See [LICENSE](LICENSE) for the full terms.
+<a href="LICENSE"><img alt="View License" src="https://img.shields.io/badge/License-MAKOTO%20LAB%20Limited%20Beta-555?style=for-the-badge"></a>
